@@ -1,0 +1,175 @@
+
+.text {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text-menu{
+    padding: 8px;
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    color: chocolate;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.text-menu:hover{
+
+    background-color: chocolate;
+    color: white;
+    cursor: pointer;
+}
+
+.button{
+    margin-top: 45px;
+    border-radius: 30px;
+    background-color: chocolate;
+    width: 130px;
+}
+
+.card-menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+.card-item{
+    animation: fadeIn 1s ease-in both;
+    width: 50%;
+}
+
+.image-card{
+    float: left;
+    margin-right: 20px;
+}
+.image-menu{
+    border-radius: 10px;
+    border: 4px solid chocolate;
+    width: 250px;
+    height: 170px;
+    float: left;
+    margin-right: 20px;
+}
+
+.image-container{
+    max-width: 450px;
+    margin-left: 50px;
+}
+
+.image{
+    animation: fadeIn 1s ease-in both;
+    width: 450px;
+    margin-left: 50px;
+}
+
+
+.text-card{
+    padding: 0px !important;
+}
+
+.hr-card {
+    width: 100%;
+    margin-top: -10px;
+    margin-right: 50px;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 15px;
+  }
+
+.hr{
+    border: 2px solid  chocolate;
+    width:80px;
+    margin-top: 0;
+}
+
+.text-animate{
+    animation: fadeIn 1s ease-in both;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}   
+
+  @media (max-width: 1200px) {
+    .flex-container {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .image-container{
+        text-align: start;
+        padding: 0px;
+        margin: 0px;
+        float: right;
+    }
+
+    .image{
+        max-width: 100%;
+        width: auto\9; /* ie8 */
+        padding: 0px;
+        margin-left: -30px;
+    }
+
+    .card-menu{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card-item{
+        flex: 100%;
+        width: 100%;
+    }
+
+    .button{
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+  }
+
+  
+
+  @media (max-width: 768px) {
+    .card-menu{
+        text-align: center;
+    }
+    
+    .image-menu{
+        width: 100%;
+        height: 250px;
+        float: none;
+    }
+
+    .text-price{
+        text-align: end;
+        margin-top: -40px;
+        padding: 0;
+    }
+
+    .text-card{
+        padding-left: 14px !important;
+        margin-top: 10px;
+        text-align: start;
+    }
+    .text-secondary{
+        text-align: start;
+    }
+
+    .image-card{
+        width: 100%;
+    }
+
+    .hr-card{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+  }
